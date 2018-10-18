@@ -3,23 +3,23 @@ np.set_printoptions(suppress=True)
 taxi = np.genfromtxt("nyc_taxis.csv", delimiter=",", skip_header=1)
 # print(taxi[:10,:])
 
-# If we compare an array to a comparison operator, it will return a boolean array of True/False
+# If we compare an array to a comparison operator, it will return a boolean array of True/False values.
 # print(taxi > 5)
 
-a = np.array([1, 2, 3, 4, 5])
-check_a = a < 3
+# a = np.array([1, 2, 3, 4, 5])
+# check_a = a < 3
 # print(check_a)
 
-# Boolean indexing is used to index (select) using boolean arrary. This only selects the True values in the array:
+# Boolean indexing is used to index (select) using a boolean arrary. This only selects the True values in the array:
 
-a_two = a[check_a]
+# a_two = a[check_a]
 # print(a_two)
-number_vals = a_two.shape[0] # The [0] extracts the value from the returned tuple of shape, as it is still a 2D array (I think?)
+# number_vals = a_two.shape[0] # The [0] extracts the value from the returned tuple of shape, as it is still a 2D array (I think?)
 # print(number_vals)
 
 # Can copy arrays using new_array = old_array.copy()
 # print(a)
-a[a>3] = 10
+# a[a>3] = 10
 # print(a)
 
 # The above first selects from array a all values >3, and changes them to 10.
